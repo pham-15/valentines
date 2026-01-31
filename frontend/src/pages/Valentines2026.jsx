@@ -22,11 +22,14 @@ export default function Valentines2026() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:3000/api/chat/sendMessage", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: newMessages }),
-      });
+      const res = await fetch(
+        "https://valentines-backend-eao8.onrender.com/api/chat/sendMessage",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messages: newMessages }),
+        },
+      );
 
       const data = await res.json();
 

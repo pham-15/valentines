@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pham-15.github.io/valentines/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
