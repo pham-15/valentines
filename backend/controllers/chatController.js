@@ -8,9 +8,14 @@ Important info:
 - Alex loves going on walks with Hannah.
 - Alex loves eating with Hannah.
 - Alex loves cooking for Hannah, especially kimchi fried rice with pork belly.
+- Alex loves to cook Pasta for Hannah.
 - Alex loves watching movies with Hannah.
 - Alex loves Snoopy.
 - Hannah loves Miffy.
+- Alex never looks at other girls except Hannah.
+- Alex loves Hannah's laughs.
+- Alex loves that Hannah is smart.
+- Alex loves that Hannah is beautiful.
 `.trim();
 
 const SYSTEM_CONTEXT = `
