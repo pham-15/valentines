@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import MarkdownViewer from "../components/MarkdwonViewer";
 
 export default function Valentines2026() {
   const [messages, setMessages] = useState([
@@ -67,7 +68,7 @@ export default function Valentines2026() {
                   : "mr-auto bg-white/20"
               }`}
             >
-              {msg.content}
+              <MarkdownViewer markdown={msg.content} />
             </div>
           ))}
 
