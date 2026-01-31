@@ -32,7 +32,7 @@ export default function Valentines2026() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ messages: newMessages }),
-        }
+        },
       );
 
       const data = await res.json();
@@ -57,7 +57,6 @@ export default function Valentines2026() {
         {/* Header */}
         <div className="flex flex-col items-center gap-2 text-center">
           <h1 className="text-4xl font-semibold">2026</h1>
-          <p className="text-sm opacity-90">A little chat, just for you 💌</p>
         </div>
 
         {/* Valentine prompt */}
@@ -66,6 +65,9 @@ export default function Valentines2026() {
             <h2 className="text-2xl font-semibold">
               Will you be my valentine? 💘
             </h2>
+            <p className="text-sm opacity-90">
+              You'll want to see the surprise!
+            </p>
 
             {rejected && (
               <p className="text-sm text-white/80">Wrong, try again 😤</p>
@@ -93,6 +95,11 @@ export default function Valentines2026() {
         ) : (
           <>
             {/* Chat box */}
+            <div className="flex flex-col items-center gap-2 text-center">
+              <p className="text-sm opacity-90">
+                A little chat, just for you 💌
+              </p>
+            </div>
             <div className="flex flex-1 flex-col gap-3 rounded-xl bg-white/10 p-4">
               {messages.map((msg, i) => (
                 <div
